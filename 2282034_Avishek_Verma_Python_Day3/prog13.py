@@ -12,4 +12,4 @@ d = {"gmail.com": ["paul.buchheit", "sanjeev.singh", "kevin.fox"], "yahoo.com": 
 
 for i in d:
     for j in d[i]:
-        print(j, '@', i)
+        print(j + '@' + i)

@@ -10,5 +10,5 @@ d = {"apples": 100.50, "bananas": 40, "oranges": 150,
      "bread": 12.50, "milk": 23.50, "eggs": 39}
 
 print('Original dictionary ->', d)
-d.setdefault('total', sum(list(d.values())))
+d['total'] = sum(list(d.values()))
 print('After Sum -> ', d)

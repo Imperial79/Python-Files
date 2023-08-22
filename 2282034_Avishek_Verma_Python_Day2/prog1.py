@@ -1,4 +1,4 @@
-'''Generate a string by rotating a given string by ‘n’ elements.
+'''Generate a string by rotating a given string by 'n' elements.
 Sample Input: mca students n=2
 Output: 
     Left Rotation: a studentsmc
