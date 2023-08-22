@@ -1,0 +1,26 @@
+1: '''
+2: 2. Write a script that identifies the longest word(s) in a file and output a message that
+3: includes the length of the longest word, along with all of the words of that length that
+4: occurred in the file.
+5: '''
+6: 
+7: rfile = open('test.txt', 'r')
+8: maxLen = 0
+9: lst = rfile.read()
+10: 
+11: lst = lst.split()
+12: for i in range(len(lst)):
+13:     for j in lst[i]:
+14:         if not j.isalpha():
+15:             lst[i] = lst[i].replace(j, '')
+16: 
+17: for i in lst:
+18:     if maxLen < len(i):
+19:         maxLen = len(i)
+20:         max = i
+21: 
+22: print("MaxLength:", maxLen, " word:", max)
+23: 
+24: for i in lst:
+25:     if (len(i) == maxLen):
+26:         print(i, end='\n')
