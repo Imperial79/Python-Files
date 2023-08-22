@@ -8,5 +8,5 @@ Output: ['19', '3478', '9817', '96', '9005', '84', '23', '12', '781', '150']
 '''
 
 lst = ['150', '23', '781', '19', '3478', '12', '9005', '84', '9817', '96']
-lst.sort(key=lambda x: x[-1], reverse=True)
+lst.sort(lambda x: x[-1], reverse=True)
 print(lst)

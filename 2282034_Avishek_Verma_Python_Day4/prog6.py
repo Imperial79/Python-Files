@@ -1,6 +1,6 @@
 '''
 6. sin(x) can be calculated approximately by summing the terms of the infinite series as follows
-sin(𝑥) = 𝑥 − 𝑥**3/3! + 𝑥**5/5! − 𝑥**7/7! …
+sin(x) = x - x**3/3! + x**5/5! - x**7/7! …
 where x is expressed in radians. Write function(s) to calculate the value of sin x, accepting x as degree from user. Compare your results with that of math.sin().
 '''
 
