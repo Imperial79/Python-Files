@@ -6,20 +6,19 @@
 # Input : S = ‘07:05:45PM’Output: ‘19:05:45’
 
 
-inp = "12:05:45AM"
+inp = "12:45:54PM"
 
 temp = inp
-annot = temp[8:]
+annot = temp[len(temp)-2:]
 
 dateList = temp[:-2].split(':')
 hr, min, sec = (dateList[0]), (dateList[1]), (dateList[2])
 
-print(hr, min, sec)
-
 if (annot == "AM" and hr == '12'):
     hr = '00'
-elif (annot == "PM" and int(hr) >= 1 or int(hr) <= 11):
+elif (annot == "PM" and hr == '12'):
+    hr = '12'
+elif (annot == "PM" and (int(hr) >= 1 or int(hr) <= 11)):
     hr = str(int(hr)+12)
 
-print("After formatting")
-print(hr, ':', min, ':', sec)
+print(hr+':'+min+':'+sec)

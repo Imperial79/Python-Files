@@ -1,7 +1,14 @@
-arr1 = [1, 2, 3, 4, 5, 6]
-arr2 = [1, 2, 3]
+nums1 = [1, 2, 2, 1]
+nums2 = [2]
 
 
-set(arr1).intersection_update(set(arr2))
+# if (len(nums1) > len(nums2)):
+#     nums1, nums2 = nums2, nums1
 
-print(arr1)
+o = []
+for i in nums1:
+    if (i in nums2):
+        o.append(i)
+        nums2.remove(i)
+
+print(o)
